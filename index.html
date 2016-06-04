@@ -1,232 +1,214 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="Keywords" content="blog"/>
-    <meta name="Description" content="blog"/>
-    <title>Simple</title>
-    <link rel="shortcut icon" href="/static/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Job Hunting Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="plugin/viewer/css/viewer.min.css">
 </head>
 <body>
-<div class="main">
-    <div class="header">
-        <ul id="pages">
-            <li>
-                <a href="/">home</a>
-            </li>
-            <li>
-                <a href="/#/tags">tags</a>
-            </li>
-            <li>
-                <a href="/#/archive">archive</a>
-            </li>
+ 
+<div class="content">
+        <div class="left">
+            <h1 class="logo">Job Hunting Page</h1>
+            <ul class="menu">
+                <li><a id="works" href="#" class="active">Works</a></li>
+                <li><a id="case" href="#case">Case Analysis</a></li>
+                <li><a id="aboutme" href="#about">About Me</a></li>
+            </ul>
+        </div>  
+        <div id="right">
+        </div>  
+
+ <footer class="footer">© Copyright 2016 by Rick.Xu,Designed by Ashley</footer>
+   </div> 
+
+<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script src="plugin/viewer/js/viewer-jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="http://cdn.bootcss.com/backbone.js/1.3.3/backbone-min.js"></script>
+
+
+<script type="text/template" id="tpl-works">
+    <div class="nav">Works</div>
+    <div id="view">
+        <div style="background-color: #ccc;"><h2 class="ai">Illustrator</h2></div>
+        <ul>
+            <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p><a href="#">download</a></li>
+            <li><img data-original="img/tibet-2.jpg" src="img/thumbnails/tibet-2.jpg" alt="图片2"></li>
+            <li><img data-original="img/tibet-3.jpg" src="img/thumbnails/tibet-3.jpg" alt="图片3"></li>
+            <li><img data-original="img/tibet-4.jpg" src="img/thumbnails/tibet-4.jpg" alt="图片4"></li>
+            <li><img data-original="img/tibet-5.jpg" src="img/thumbnails/tibet-5.jpg" alt="图片5"></li>
+              <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                  <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                    <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>   
+            <div class="clear"></div>
         </ul>
+
+        <div style="background-color: #ccc;"><h2 class="ps">Photoshop</h2></div>
+        <ul>
+            <li><img data-original="img/7.png" src="img/thumbnails/7.png" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+            <li><img data-original="img/tibet-2.jpg" src="img/thumbnails/tibet-2.jpg" alt="图片2"></li>
+            <li><img data-original="img/tibet-3.jpg" src="img/thumbnails/tibet-3.jpg" alt="图片3"></li>
+            <li><img data-original="img/tibet-4.jpg" src="img/thumbnails/tibet-4.jpg" alt="图片4"></li>
+            <li><img data-original="img/tibet-5.jpg" src="img/thumbnails/tibet-5.jpg" alt="图片5"></li>
+              <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                  <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                    <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>   
+            <div class="clear"></div>
+        </ul>
+
+        <div style="background-color: #ccc;"><h2 class="app">App</h2></div>
+        <ul>
+            <li><img data-original="img/7.png" src="img/thumbnails/7.png" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+            <li><img data-original="img/tibet-2.jpg" src="img/thumbnails/tibet-2.jpg" alt="图片2"></li>
+            <li><img data-original="img/tibet-3.jpg" src="img/thumbnails/tibet-3.jpg" alt="图片3"></li>
+            <li><img data-original="img/tibet-4.jpg" src="img/thumbnails/tibet-4.jpg" alt="图片4"></li>
+            <li><img data-original="img/tibet-5.jpg" src="img/thumbnails/tibet-5.jpg" alt="图片5"></li>
+              <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                  <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>
+                    <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"><p>I told him no one had remembered his birthday. I think he fell for it, so the surprise party should really be a surprise!</p></li>   
+            <div class="clear"></div>
+            </ul>
+        </div>
+</script>
+
+
+<script type="text/template" id="tpl-case">
+    <div class="nav">Case Analysis</div>
+    <div id="case">
+        <h1>1. 前期调研</h1>
+        <p>
+            环节要敲定userflow，用户流程及其中的关键步骤，每一步骤都是一个主要界面。
+        </p>
+        <h1>2. 界面线框图</h1>
+        <p>
+            在确定的用户流程中，选出几个关键的，有代表性的步骤，做细化的wireframe线框图，确定关键界面里的UI元素和布局，以及全局的布局排版风格。
+        </p>
+        <h1>3. 界面视觉设计</h1>
+        <p>
+            开始做关键界面的视觉设计，进行配色、样式不同风格的尝试，确定产品界面的视觉设计风格
+        </p>
+        <h1>4. Prototype 可动原型</h1>
+        <p>
+            需要做成可操作甚至有关键界面动画示意的可动原型。
+        </p>
+        
     </div>
-    <div class="wrap-header">
-        <h1>
-        <a href="/" id="title"></a>
-        </h1>
-    </div>
-    <div class="innermain" id="main">
-    </div>
-    <div class="footer">
-        <p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
-    </div>
+</script>
+
+<script type="text/template" id="tpl-about">
+    <div id="about">
+        <div class="nav">About Me</div>
+        <div style="float:right;"><img src="images/me.JPG" alt="" width="200px;"></div>
+        <div style="width:520px;">
+        <p>罗卉，90后女青年，某师范院校英语毕业后，从事3年的英语培训教育。现在自学ui设计，希望能在设计的道路上越走越远。</p>
+        <p>人生就是一个得与失的过程，而我却是一个幸运者，得到的永远比失去的多。生活的压力迫使我放弃了轻松的前台接待，放弃了体面的公办教师，换来虽有些蓬头垢面的工作，但是我仍然很享受那些熬得只剩下黑眼圈的日子，因为我在学习使用Photoshop、Illustrator、html5、css3、js...中激发了兴趣，然后越走越远...</p>
+        <p>在这条路上，我要感谢三个人，第一个是我从事编辑的老板，是他给了我充分学习研究div的时间，第二个人是我的老师，如果不是街上的一次偶遇，如果不是因为我正缺钱，我不会去强迫自己做不会的事情，但是金钱的诱惑实在是抵挡不了，于是我选择了“接招”，东拼西凑的把一个网站做好了，当时还堪称佳作的网站至今已尘归尘土归土了。第三个人，我总说他是我的伯乐，因为我当初应聘技术员的时候，我说我什么都不会，但是他却给了我机会，而我就牢牢的把握了那次机会，直到现在如果不是我主动把域名和空间转出来，我会一直霸占着公司资源，免费下去（可我就偏偏不是喜欢爱占便宜的人，总感觉欠了就得还）...
+</p><p>
+还要特别感谢一个人，是我的老公。他是我的百科，我不会的，他会，最后我还是不会。博客能做到今天这样，一半都有他的功劳。他不仅仅支持我的事业作为我有力的经济后盾，还毫无怨言的包容我所有工作、生活当中有理无理的坏脾气，曾经我是多么有自己原则的一个人，但是遇到他，打破了我自己毕生坚持的原则，喜欢一句话“冥冥中该来则来，无处可逃”。</p>
 </div>
-<script src="main.js"></script>
-<script id="itemTemplate" type="text/mustache">
-    {{#posts}}
-    <div class="item">
-        <div class="date">
-            <div class="little">
+        
+        <div id="concat">
+            <div class="c_left">
+                <img src="images/timg.jpg" width="200px" height="200px" alt="">
             </div>
-            {{date}}
-        </div>
-        <div class="title">
-            <h2>
-                <a href="{{path}}">{{title}}</a>
-            </h2>
+            <div class="c_right">
+
+                <h1><span>姓名：罗卉</span></h1>
+                <h1><span>籍贯：陕西—安康</span></h1>
+                <h1><span>现居：苏州—工业园区</span></h1>
+                <h1><span>喜欢的书：《红与黑》《红楼梦》</span></h1>
+                <h1><span>喜欢的音乐：《burning》《just one last dance》《相思引》</span></h1>
+                <h1><span>电话：13438970983</span></h1>
+                <h1><span>邮箱：Mrs_Me@163.com</span></h1>
+                <h1><span>简历：<a href="#">查看</a></span></h1>
+            </div>
+
         </div>
     </div>
-    {{/posts}}
-    <ul class="pages">
-        Pages:
-        {{#pages}}
-            <li>
-            {{#select}}
-                <span class="selected">{{num}}</span>
-            {{/select}}
-            {{^select}}
-                <a href="{{path}}">{{num}}</a>
-            {{/select}}
-            </li>
-        {{/pages}}
-    </ul>
-</script>
-<script id="archiveTemplate" type="text/mustache">
-    {{#group}}
-    {{name}}
-    {{#posts}}
-    <div class="archive">
-    <span>{{date}}</span>
-    <a href="{{path}}">{{title}}</a>
-    </div>
-    {{/posts}}
-    {{/group}}
-</script>
-<script id="pagesTemplate" type="text/mustache">
-    {{#pages}}
-    <li>
-        <a href="{{path}}">{{title}}</a>
-    </li>
-    {{/pages}}
-</script>
-<script id="tagsTemplate" type="text/mustache">
-    <ul style="list-style: none">
-        {{#tags}}
-        <li style="display:inline; margin: 15px;">
-            <a href="{{path}}" style="font-size: {{size}}%">{{name}}</a>
-        </li>
-        {{/tags}}
-    </ul>
 </script>
 <script>
-$(document).ready(function() {
-    $.ajax({
-        url: "main.json",
-        type: "GET",
-        dataType: "json",
-        success: function(data) {
-            $("#title").html(data.name);
-            data.posts.sort(function(a, b){
-                if (a.date > b.date)
-                    return -1;
-                if (a.date < b.date)
-                    return 1;
-                return 0;
-            });
-            console.log(data.posts);
-            var per = data.number_of_posts_per_page;
-            var n = data.posts.length;
-            var num = Math.floor((n-1)/per)+1;
-            var arr = [];
-            var tmp = [];
-            for (var i = 0; i < n; ++i) {
-                if (i != 0 && i % per == 0) {
-                    arr.push(tmp)
-                    tmp = [];
-                }
-                tmp.push(data.posts[i]);
-            }
-            if (tmp.length > 0)
-                arr.push(tmp);
-            var pages = [{"select": true, "num": 1, "path": "#/page/1"}];
-            for (var i = 1; i < num; ++i)
-                pages.push({"select": false, "num": i+1, "path": "#/page/"+(i+1)});
-            var itemTemplate = Hogan.compile($("#itemTemplate").html());
-            var itemHtml = itemTemplate.render({"posts": arr[0], "pages": pages});
-            $("#main").html(itemHtml);
-            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
-            var pagesHtml = pagesTemplate.render({"pages": data.pages});
-            $("#pages").append(pagesHtml);
-            var App = Spine.Controller.sub({
-                el: $("#main"),
-                init: function() {
-                    this.routes({
-                        "/page/:page": function(page) {this.go(page);},
-                        "/tags": function() {this.tags();},
-                        "/tag/:tag": function(param) {this.tag(param);},
-                        "/archive": function() {this.archive();}
-                    });
-                    Spine.Route.setup();
-                },
-                go: function(page) {
-                    page = Math.floor(page.page);
-                    for (var i = 0; i < pages.length; ++i)
-                        pages[i].select = false;
-                    pages[page-1].select = true;
-                    var tmppages = pages;
-                    if (page > 2 && pages.length > 4)
-                        tmppages = pages.slice(page-3);
-                    if (tmppages.length > 5)
-                        tmppages = tmppages.slice(0, 5);
-                    if (pages.length > 4 && tmppages.length < 5)
-                        tmppages = pages.slice(-5);
-                    itemHtml = itemTemplate.render({"posts": arr[page-1], "pages": tmppages});
-                    $("#main").html(itemHtml);
-                },
-                tags: function() {
-                    var ts = {};
-                    var posts = data.posts;
-                    var tf = function() {
-                        for (var i = 0; i < posts.length; ++i) {
-                            var tmp = posts[i].tags.split(" ");
-                            for (var j = 0; j < tmp.length; ++j) {
-                                if (tmp[j].length == 0)
-                                    continue;
-                                if (!(tmp[j] in ts))
-                                    ts[tmp[j]] = 0;
-                                ts[tmp[j]]++;
-                            }
-                        }
-                    }
-                    tf();
-                    posts = data.pages;
-                    tf();
-                    var ans = [];
-                    for (var k in ts) {
-                        ans.push({"name": "#"+k, "size": 100+Math.sqrt(ts[k]-1)*30, "path": "#/tag/"+k});
-                    }
-                    var tagsTemplate = Hogan.compile($("#tagsTemplate").html());
-                    var tagsHtml = tagsTemplate.render({"tags": ans});
-                    $("#main").html(tagsHtml);
-                },
-                tag: function(param) {
-                    var tag = param.tag;
-                    var group = [{"name": "#"+tag}];
-                    var posts = [];
-                    for (var i = 0; i < data.posts.length; ++i) {
-                        var tmp = data.posts[i].tags.split(" ");
-                        if (tmp.indexOf(tag) != -1)
-                            posts.push(data.posts[i]);
-                    }
-                    for (var i = 0; i < data.pages.length; ++i) {
-                        var tmp = data.pages[i].tags.split(" ");
-                        if (tmp.indexOf(tag) != -1)
-                            posts.push(data.pages[i]);
-                    }
-                    group[0].posts = posts;
-                    var tmpTemplate = Hogan.compile($("#archiveTemplate").html());
-                    var tmpHtml = tmpTemplate.render({"group": group});
-                    $("#main").html(tmpHtml);
-                },
-                archive: function() {
-                    var group = [];
-                    var posts = data.posts;
-                    var now = -1;
-                    var name = "";
-                    for (var i = 0; i < posts.length; ++i) {
-                        if (name != posts[i].date.slice(0,4)) {
-                            name = posts[i].date.slice(0,4);
-                            group.push({"name": name, "posts": []});
-                            now++;
-                        }
-                        group[now].posts.push(posts[i]);
-                    }
-                    var tmpTemplate = Hogan.compile($("#archiveTemplate").html());
-                    var tmpHtml = tmpTemplate.render({"group": group});
-                    $("#main").html(tmpHtml);
-                }
-            });
-            new App();
-        },
-        error: function(e) {
-            console.log("init error");
-        }
-    });    
+ 
+var Works = Backbone.View.extend({  
+  el:$('#right'),
+  template: _.template($('#tpl-works').html()),  
+  initialize: function() {  
+    this.render();  
+  },
+  render: function() {  
+     $(this.el).html(this.template());
+     $('#view').viewer({
+        url: 'data-original',
 });
+     return this;  
+  },  
+
+});  
+
+var Case = Backbone.View.extend({  
+  el:$('#right'),
+  template: _.template($('#tpl-case').html()),  
+  initialize: function() {  
+    this.render();  
+  },
+  render: function() {  
+     $(this.el).html(this.template());
+     
+     return this;  
+  },  
+
+}); 
+
+
+var About = Backbone.View.extend({  
+  el:$('#right'),
+  template: _.template($('#tpl-about').html()),  
+  initialize: function() {  
+    this.render();  
+  },
+  render: function() {  
+     $(this.el).html(this.template());
+     return this;  
+  },  
+
+});  
+
+var AppRouter  = Backbone.Router.extend({
+    initialize:function() {
+
+    },
+    routes: {
+        "":"works",
+        "resource":"resource",
+        "case":"case",
+        "about":"about"
+    },
+    works:function() {
+        $('.menu a').removeClass('active');
+        $('#works').addClass('active');
+         var v = new Works();
+    },
+    case:function() {
+        $('.menu a').removeClass('active');
+        $('#case').addClass('active');
+        var v = new Case();
+    },
+    about: function (a) {
+        var v = new About();
+        $('.menu a').removeClass('active');
+        $('#aboutme').addClass('active');
+    }
+});
+
+
+new AppRouter ();
+Backbone.history.start();
+ 
+
 </script>
 </body>
 </html>
