@@ -28,49 +28,67 @@
 <script src="http://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="http://cdn.bootcss.com/backbone.js/1.3.3/backbone-min.js"></script>
 
+
 <script type="text/template" id="tpl-works">
-    <div class="nav">Works <a href="http://pan.baidu.com/s/1nu7hTfr" target="_blank" style="text-decoration: underline; float:right; font-size:13px; color:red;">download source</a></div>
+    <div class="nav">Works</div>
     <div id="view">
         <div style="background-color: #ccc;"><h2 class="ai">Illustrator</h2></div>
         <ul>
             <li><img data-original="works/ai/01/01.png" src="works/ai/01/01.png" alt="扁平_圣诞快乐">
+            <p><a href="works/ai/01/01.zip">作品1 扁平_圣诞快乐</a></p>
             </li>
              <li><img data-original="works/ai/02/02.png" src="works/ai/02/02.png" alt="作品2 扁平_动物城之旅">
+            <p><a href="works/ai/02/02.zip">作品2 扁平_动物城之旅</a></p>
             </li>
              <li><img data-original="works/ai/03/03.png" src="works/ai/03/03.png" alt="作品3 针织logo">
+            <p><a href="works/ai/03/03.zip">作品3 针织logo</a></p>
             </li>
              <li><img data-original="works/ai/04/04.png" src="works/ai/04/04.png" alt="作品4 模拟实物">
+            <p><a href="works/ai/04/04.zip">作品4 模拟实物</a></p>
             </li>
              <li><img data-original="works/ai/05/05.png" src="works/ai/05/05.png" alt="作品5 摇一摇抽奖">
+            <p><a href="works/ai/05/05.zip">作品5 摇一摇抽奖</a></p>
             </li>
         </ul> 
   
         <div style="background-color: #ccc;"><h2 class="ps">Photoshop</h2></div>
         <ul>
            <li><img data-original="works/ps/01/01.png" src="works/ps/01/01.png" alt="作品1 蜗牛的蘑菇房子">
+            <p><a href="works/ps/01/01.zip">作品1 蜗牛的蘑菇房子</a></p>
             </li>
             <li><img data-original="works/ps/02/02.png" src="works/ps/02/02.png" alt="作品2 人物城市剪影">
+            <p><a href="works/ps/02/02.zip">作品2 人物城市剪影</a></p>
             </li>
              <li><img data-original="works/ps/03/03.png" src="works/ps/03/03.png" alt="作品3 星空">
+            <p><a href="works/ps/03/03.zip">作品3 星空</a></p>
             </li>
              <li><img data-original="works/ps/04/04.jpg" src="works/ps/04/04.jpg" alt="作品4 旧海报">
+            <p><a href="works/ps/04/04.zip">作品4 旧海报</a></p>
             </li>
+             
           </li> 
         </ul> 
  
-        <div style="background-color: #ccc;"><h2 class="app">Web App</h2></div>
+        <div style="background-color: #ccc;"><h2 class="app">App</h2></div>
         <ul>
             <li><img data-original="works/app/01/01.png" src="works/app/01/01.png" alt="启动页">
+            <p><a href="works/app/01/01.zip">启动页</a></p>
             </li>
-            <li><img data-original="works/app/03/03.png" src="works/app/03/03.png" alt="注册页面">
+            
+             <li><img data-original="works/app/03/03.png" src="works/app/03/03.png" alt="注册页面">
+            <p><a href="works/app/03/03.zip">注册页面</a></p>
             </li>
              <li><img data-original="works/app/04/04.png" src="works/app/04/04.png" alt="首页">
+            <p><a href="works/app/04/04.zip">首页</a></p>
             </li>
              <li><img data-original="works/app/02/02.png" src="works/app/02/02.png" alt="登录">
+            <p><a href="works/app/02/02.zip">登录</a></p>
             </li>
              <li><img data-original="works/app/05/05.png" src="works/app/05/05.png" alt="用户动态">
+            <p><a href="works/app/05/05.zip">用户动态</a></p>
             </li>
-             <li><img data-original="works/app/06/06.png" src="works/app/06/06.png" alt="我的">
+ <li><img data-original="works/app/06/06.png" src="works/app/06/06.png" alt="我的">
+            <p><a href="works/app/06/06.zip">我的</a></p>
             </li>
         </ul> 
         </div>
@@ -82,14 +100,14 @@
     <div id="case">
         <h1>1. 前期调研</h1>
         <p>
-            该环节要敲定userflow，用户流程及其中的关键步骤，每一步骤都是一个主要界面。比如，我们现在要做一个类似于书本的app，该app是以书为中心，能把喜欢它的人聚集在一起，对书中的章节内容建立有趣的话题。
+            环节要敲定userflow，用户流程及其中的关键步骤，每一步骤都是一个主要界面。
         </p>
         <h1>2. 界面线框图</h1>
         <p>
             在确定的用户流程中，选出几个关键的，有代表性的步骤，做细化的wireframe线框图，确定关键界面里的UI元素和布局，以及全局的布局排版风格。
         </p>
             <img src="works/app/arp.png" style="width:60%;" alt="原型图">
-
+        
         <h1>3. 界面视觉设计</h1>
         <p>
             开始做关键界面的视觉设计，进行配色、样式不同风格的尝试，确定产品界面的视觉设计风格
@@ -109,10 +127,10 @@
         <div style="float:right;"><img src="images/me.jpg" alt="" width="200px;"></div>
         <div style="width:520px;">
         <p>罗卉，90后女青年，某师范院校英语毕业后，从事3年的英语培训教育。现在自学ui设计，希望能在设计的道路上越走越远。</p>
-        <p>人生就是一个得与失的过程，而我却是一个幸运者，得到的永远比失去的多。生活的压力迫使我放弃了体面的公办教师，换来虽有些蓬头垢面的工作，但是我仍然很享受那些熬得只剩下黑眼圈的日子，因为我在学习使用Photoshop、Illustrator、html5、css3、js...中激发了兴趣，同时希望越走越远...</p>
-        <p>在这条路上，我要感谢两个人，第一个是我从事英语培训时候的老板，是他给了我充分学习研究web设计的时间和空间，第二个人是我的第一个客户，如果不是街上的一次偶遇，如果不是因为我正缺钱，我不会去强迫自己做不会的事情，但是金钱的诱惑实在是抵挡不了，于是我选择了“接招”，东拼西凑的把一个网站做好了，当时还堪称佳作的网站至今已尘归尘土归土了。至今，我们还拿当初的网站开玩笑说：“我就是从这里出发的”。
+        <p>人生就是一个得与失的过程，而我却是一个幸运者，得到的永远比失去的多。生活的压力迫使我放弃了轻松的前台接待，放弃了体面的公办教师，换来虽有些蓬头垢面的工作，但是我仍然很享受那些熬得只剩下黑眼圈的日子，因为我在学习使用Photoshop、Illustrator、html5、css3、js...中激发了兴趣，然后越走越远...</p>
+        <p>在这条路上，我要感谢三个人，第一个是我从事编辑的老板，是他给了我充分学习研究div的时间，第二个人是我的老师，如果不是街上的一次偶遇，如果不是因为我正缺钱，我不会去强迫自己做不会的事情，但是金钱的诱惑实在是抵挡不了，于是我选择了“接招”，东拼西凑的把一个网站做好了，当时还堪称佳作的网站至今已尘归尘土归土了。第三个人，我总说他是我的伯乐，因为我当初应聘技术员的时候，我说我什么都不会，但是他却给了我机会，而我就牢牢的把握了那次机会，直到现在如果不是我主动把域名和空间转出来，我会一直霸占着公司资源，免费下去（可我就偏偏不是喜欢爱占便宜的人，总感觉欠了就得还）...
 </p><p>
-还要特别感谢一个人，是我的男票。他是我的百科，我不会的，他会，最后我还是不会。能做到今天这样，一半都有他的功劳。他不仅仅支持我的事业作为我有力的经济和精神后盾，还毫无怨言的包容我所有工作、生活当中有理无理的坏脾气，曾经我是多么有自己原则的一个人，但是遇到他，打破了我自己毕生坚持的原则，喜欢一句话“冥冥中该来则来，无处可逃”。</p>
+还要特别感谢一个人，是我的老公。他是我的百科，我不会的，他会，最后我还是不会。博客能做到今天这样，一半都有他的功劳。他不仅仅支持我的事业作为我有力的经济后盾，还毫无怨言的包容我所有工作、生活当中有理无理的坏脾气，曾经我是多么有自己原则的一个人，但是遇到他，打破了我自己毕生坚持的原则，喜欢一句话“冥冥中该来则来，无处可逃”。</p>
 </div>
         
         <div id="concat">
@@ -125,7 +143,7 @@
                 <h1><span>籍贯：陕西—安康</span></h1>
                 <h1><span>现居：苏州—工业园区</span></h1>
                 <h1><span>喜欢的书：《红与黑》《红楼梦》</span></h1>
-                <h1><span>喜欢的音乐：Moving on-Kodaline、夜明-佐藤康夫</span></h1>
+                <h1><span>喜欢的音乐：《burning》《just one last dance》《相思引》</span></h1>
                 <h1><span>电话：13438970983</span></h1>
                 <h1><span>邮箱：Mrs_Me@163.com</span></h1>
                 <h1><span>简历：<a href="works/罗卉的简历.pdf" target="_blank">查看</a></span></h1>

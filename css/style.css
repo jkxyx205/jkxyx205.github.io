@@ -77,18 +77,19 @@ h1.logo {
     background-color: #ebebeb;
 }
 
+
 #view ul{
-    -webkit-column-width:180px;
-    -moz-column-width:180px; 
-      -webkit-column-gap:5px;
-      -moz-column-gap:5px;
+      -webkit-column-count: 4;
+      -webkit-column-gap: 5px;
+
+      -moz-column-count: 4;
+      -moz-column-gap: 5px;
+
+    /* ie */
+      column-count: 4;
+      column-gap: 5px;
 }
 
-#view ul a{
-    text-decoration: underline;
-    float: right;
-    padding: 5px;
-}
 
 #view h2 {
     padding: 5px 5px 5px 30px;
@@ -97,30 +98,30 @@ h1.logo {
     font-family: "Comic Sans MS",cursive,sans-serif;
 }
 #view h2.ai {
-   background:url('../images/ai.gif') no-repeat;
+   background:url('../images/ai.png') no-repeat;
    background-size:25px 25px;
 }
 
 #view h2.ps {
-   background:url('../images/ps.gif') no-repeat;
+   background:url('../images/ps.png') no-repeat;
    background-size:25px 25px;
 }
 
 #view h2.app {
-   background:url('../images/app.gif') no-repeat;
+   background:url('../images/app.png') no-repeat;
    background-size:25px 25px;
 }
 
 #view li {
     background-color: #fff;
+    margin-bottom: 5px;
 }
 #view img {
     width: 100%;
 }
 
 #view p {
-    padding: 5px;
-    font-family: "Comic Sans MS",cursive,sans-serif;
+    padding: 10px;
 }
 
 /**************about*************/
@@ -162,6 +163,9 @@ div.nav {
     color: red;
 }
 /*************case**************/
+#case {
+  padding: 5px;
+}
 #case p {
     line-height: 180%;
     text-indent:25px;
@@ -169,4 +173,5 @@ div.nav {
 
 #case h1 {
     font-weight: bold;
+    margin-top: 
 }
